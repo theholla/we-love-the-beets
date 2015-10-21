@@ -40,7 +40,8 @@
             android:layout_centerHorizontal="true"
             android:textColor="@android:color/black"
             android:textSize="16dp"
-            android:textIsSelectable="true"/>
+            android:textIsSelectable="true"
+            android:paddingBottom="10dp"/>
     </ScrollView>
 
 </RelativeLayout>

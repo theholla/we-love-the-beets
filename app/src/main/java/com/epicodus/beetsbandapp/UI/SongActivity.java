@@ -26,7 +26,6 @@ public class SongActivity extends AppCompatActivity {
         mLyricsLabel = (TextView) findViewById(R.id.lyricsLabel);
 
         setLayoutContent();
-        //need song library?
     }
 
     private void setLayoutContent() {
