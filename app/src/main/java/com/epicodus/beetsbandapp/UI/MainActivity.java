@@ -1,9 +1,11 @@
-package com.epicodus.beetsbandapp;
+package com.epicodus.beetsbandapp.UI;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.epicodus.beetsbandapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
