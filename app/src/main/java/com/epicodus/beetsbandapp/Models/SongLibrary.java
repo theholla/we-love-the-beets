@@ -22,28 +22,28 @@ public class SongLibrary {
         mSongs = new ArrayList<>();
 
         mSongs.add(new Song(
-                "title1",
-                "lyrics"
+                "Bangin' on a Trash Can",
+                "lyrics1"
         ));
 
         mSongs.add(new Song(
-                "title2",
-                "lyrics"
+                "Shout Your Lungs Out",
+                "lyrics2"
         ));
 
         mSongs.add(new Song(
-                "title3",
-                "lyrics"
+                "I Need Mo Allowance",
+                "lyrics3"
         ));
 
         mSongs.add(new Song(
-                "title4",
-                "lyrics"
+                "Killer Tofu",
+                "lyrics4"
         ));
 
         mSongs.add(new Song(
-                "title5",
-                "lyrics"
+                "Patty You're the Mayonnaise For Me",
+                "lyrics5"
         ));
     }
 }

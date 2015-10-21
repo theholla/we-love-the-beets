@@ -40,6 +40,7 @@ public class DiscographyActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
                 intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(0).getSongTitle());
+                intent.putExtra("lyricsLabel", mSongLibrary.getSongs().get(0).getLyrics());
                 startActivity(intent);
             }
         });
@@ -49,6 +50,7 @@ public class DiscographyActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
                 intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(1).getSongTitle());
+                intent.putExtra("lyricsLabel", mSongLibrary.getSongs().get(1).getLyrics());
                 startActivity(intent);
             }
         });
@@ -58,6 +60,7 @@ public class DiscographyActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
                 intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(2).getSongTitle());
+                intent.putExtra("lyricsLabel", mSongLibrary.getSongs().get(2).getLyrics());
                 startActivity(intent);
             }
         });
@@ -67,6 +70,7 @@ public class DiscographyActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
                 intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(3).getSongTitle());
+                intent.putExtra("lyricsLabel", mSongLibrary.getSongs().get(3).getLyrics());
                 startActivity(intent);
             }
         });
@@ -76,6 +80,7 @@ public class DiscographyActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
                 intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(4).getSongTitle());
+                intent.putExtra("lyricsLabel", mSongLibrary.getSongs().get(4).getLyrics());
                 startActivity(intent);
             }
         });

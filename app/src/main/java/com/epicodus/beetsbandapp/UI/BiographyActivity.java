@@ -40,8 +40,8 @@ public class BiographyActivity extends AppCompatActivity {
         mNextMemberButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mCurrentBandMate = mBandMatesLibrary.nextBandMate(mCurrentBandMate);
-                setLayoutContent();
+            mCurrentBandMate = mBandMatesLibrary.nextBandMate(mCurrentBandMate);
+            setLayoutContent();
             }
         });
     }
