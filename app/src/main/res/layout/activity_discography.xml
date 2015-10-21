@@ -15,10 +15,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="The Beets: Self Titled Album"
         android:id="@+id/albumLabel"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"/>
+        android:layout_marginTop="26dp"/>
 
     <TextView
         android:layout_width="wrap_content"

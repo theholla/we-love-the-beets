@@ -30,32 +30,32 @@ public class MainActivity extends AppCompatActivity {
         mBiographiesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BiographyActivity.class);
-                startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, BiographyActivity.class);
+            startActivity(intent);
             }
         });
 
         mTourButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BiographyActivity.class);
-                startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, BiographyActivity.class);
+            startActivity(intent);
             }
         });
 
         mDiscographyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BiographyActivity.class);
-                startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, DiscographyActivity.class);
+            startActivity(intent);
             }
         });
 
         mListenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BiographyActivity.class);
-                startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, BiographyActivity.class);
+            startActivity(intent);
             }
         });
     }

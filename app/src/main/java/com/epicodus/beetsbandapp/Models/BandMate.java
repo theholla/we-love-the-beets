@@ -1,7 +1,7 @@
 package com.epicodus.beetsbandapp.Models;
 
 /**
- * Created by Guest on 10/21/15.
+ * Created by Aimee and Diana on 10/21/15.
  */
 public class BandMate {
 

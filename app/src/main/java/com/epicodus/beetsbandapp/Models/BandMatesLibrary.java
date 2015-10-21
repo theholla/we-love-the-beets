@@ -5,7 +5,7 @@ import com.epicodus.beetsbandapp.R;
 import java.util.ArrayList;
 
 /**
- * Created by Guest on 10/21/15.
+ * Created by Aimee and Diana on 10/21/15.
  */
 public class BandMatesLibrary {
     private ArrayList<BandMate> mBandMates;

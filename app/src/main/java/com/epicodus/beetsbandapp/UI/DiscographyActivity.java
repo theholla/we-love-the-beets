@@ -1,39 +1,84 @@
 package com.epicodus.beetsbandapp.UI;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.epicodus.beetsbandapp.Models.BandMate;
+import com.epicodus.beetsbandapp.Models.BandMatesLibrary;
+import com.epicodus.beetsbandapp.Models.Song;
+import com.epicodus.beetsbandapp.Models.SongLibrary;
 import com.epicodus.beetsbandapp.R;
 
 public class DiscographyActivity extends AppCompatActivity {
+
+    private SongLibrary mSongLibrary;
+
+    private Button mBanginSongButton, mShoutSongButton, mAllowanceSongButton, mTofuSongButton, mMayoSongButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_discography);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_discography, menu);
-        return true;
-    }
+        mSongLibrary = new SongLibrary();
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        mBanginSongButton = (Button) findViewById(R.id.banginSongButton);
+        mShoutSongButton = (Button) findViewById(R.id.shoutSongButton);
+        mAllowanceSongButton = (Button) findViewById(R.id.allowanceSongButton);
+        mTofuSongButton = (Button) findViewById(R.id.tofuSongButton);
+        mMayoSongButton = (Button) findViewById(R.id.mayoSongButton);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        mBanginSongButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
+                intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(0).getSongTitle());
+                startActivity(intent);
+            }
+        });
 
-        return super.onOptionsItemSelected(item);
+        mShoutSongButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
+                intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(1).getSongTitle());
+                startActivity(intent);
+            }
+        });
+
+        mAllowanceSongButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
+                intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(2).getSongTitle());
+                startActivity(intent);
+            }
+        });
+
+        mTofuSongButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
+                intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(3).getSongTitle());
+                startActivity(intent);
+            }
+        });
+
+        mMayoSongButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DiscographyActivity.this, SongActivity.class);
+                intent.putExtra("songTitleLabel", mSongLibrary.getSongs().get(4).getSongTitle());
+                startActivity(intent);
+            }
+        });
+
     }
 }
