@@ -28,10 +28,12 @@
         android:background="#9dc249"
         android:textColor="@android:color/black"
         android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/discographyButton"
+        android:layout_alignLeft="@+id/discographyButton"
         android:layout_alignRight="@+id/discographyButton"
         android:layout_alignEnd="@+id/discographyButton"
-        android:layout_margin="6dp"
-        android:padding="3dp"/>
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -42,11 +44,12 @@
         android:background="#9dc249"
         android:textColor="@android:color/black"
         android:padding="3dp"
-        android:layout_marginLeft="33dp"
-        android:layout_alignTop="@+id/tourButton"
+        android:gravity="center"
+        android:layout_above="@+id/biographiesButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="33dp"/>
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -56,12 +59,12 @@
         android:id="@+id/tourButton"
         android:background="#9dc249"
         android:textColor="@android:color/black"
-        android:layout_above="@+id/listenButton"
+        android:padding="3dp"
+        android:layout_alignTop="@+id/discographyButton"
         android:layout_alignLeft="@+id/listenButton"
         android:layout_alignStart="@+id/listenButton"
-        android:layout_margin="6dp"
-        android:padding="3dp"
-        />
+        android:layout_alignRight="@+id/listenButton"
+        android:layout_alignEnd="@+id/listenButton"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -70,10 +73,10 @@
         android:id="@+id/listenButton"
         android:background="#9dc249"
         android:textColor="@android:color/black"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="6dp"
-        android:padding="3dp"
+        android:layout_marginLeft="12dp"
+        android:layout_alignTop="@+id/biographiesButton"
+        android:layout_toRightOf="@+id/discographyButton"
+        android:layout_toEndOf="@+id/discographyButton"
+        android:layout_marginStart="35dp"
         />
 </RelativeLayout>
