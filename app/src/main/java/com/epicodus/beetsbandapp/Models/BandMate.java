@@ -10,7 +10,7 @@ public class BandMate {
     private String mBio;
     private int mImage;
 
-    public BandMate(String name, String instrument, String bio, int Image) {
+    public BandMate(String name, String instrument, String bio, int image) {
         mName = name;
         mBio = bio;
         mInstrument = instrument;
