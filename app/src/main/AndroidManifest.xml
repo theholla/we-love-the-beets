@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.epicodus.beetsbandapp.UI.MainActivity" />
         </activity>
+        <activity
+            android:name=".UI.DiscographyActivity"
+            android:label="@string/title_activity_discography"
+            android:parentActivityName=".UI.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.beetsbandapp.UI.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

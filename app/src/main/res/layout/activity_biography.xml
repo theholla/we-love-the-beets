@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/nameLabel"
+        android:textSize="30dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="wendy"/>
@@ -24,6 +25,7 @@
         android:id="@+id/memberImage"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameLabel"
         android:layout_marginTop="51dp"
         android:src="@drawable/wendy"/>
 
@@ -31,19 +33,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="keyboard"
+        android:padding="6dp"
+        android:layout_margin="6dp"
+        android:layout_below="@+id/memberImage"
         android:id="@+id/instrumentLabel"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="desc"
-        android:id="@+id/bioLabel"
-        android:layout_below="@+id/instrumentLabel"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -52,6 +47,25 @@
         android:id="@+id/nextMemberButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#8cffffff"
-        android:textColor="@android:color/black"/>
+        android:background="#d84266"
+        android:textColor="@android:color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/instrumentLabel"
+        android:layout_alignLeft="@+id/nextMemberButton"
+        android:layout_alignStart="@+id/nextMemberButton">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="desc"
+            android:id="@+id/bioLabel"
+            android:layout_below="@+id/instrumentLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"/>
+    </ScrollView>
 </RelativeLayout>
